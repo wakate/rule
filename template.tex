@@ -1,0 +1,23 @@
+\documentstyle[titlepage]{jarticle}
+
+% for pandoc
+% c.f. https://github.com/jgm/pandoc-templates/blob/master/default.latex
+\providecommand{\tightlist}{}
+% for pandoc
+
+\makeatletter
+\def\labelenumi{第\theenumi 章　}
+\def\theenumii{\arabic{enumii}}
+\def\p@enumii{}
+\def\labelenumii{第\theenumii 条　}
+\def\theenumiii{\arabic{enumiii}}
+\def\labelenumiii{\theenumiii　}
+\def\p@enumiii{}
+\makeatother
+\title{\Huge $title$}
+\author{\huge $author$}
+\date{\LARGE $for(date)$$date$\\$endfor$}
+\begin{document}
+\maketitle
+$body$
+\end{document}
