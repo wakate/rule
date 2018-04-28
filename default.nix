@@ -7,7 +7,9 @@ stdenv.mkDerivation {
   buildInputs = [
     gnumake
     pandoc
-    texlive.combined.scheme-full
+    (texlive.combine {
+      inherit (texlive) scheme-minimal platex collection-langjapanese;
+    })
   ];
   installPhase = ''
     mkdir $out/
