@@ -1,6 +1,2 @@
 language: nix
 script: nix-build
-cache:
-  timeout: 10000
-  directories:
-    - /nix
