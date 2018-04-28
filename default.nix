@@ -8,7 +8,7 @@ stdenv.mkDerivation {
     gnumake
     pandoc
     (texlive.combine {
-      inherit (texlive) scheme-minimal platex collection-langjapanese;
+      inherit (texlive) platex collection-langjapanese;
     })
   ];
   installPhase = ''
