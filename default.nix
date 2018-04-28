@@ -5,7 +5,6 @@ stdenv.mkDerivation {
   name = "rule-builder";
   src = ./.;
   buildInputs = [
-    gnumake
     pandoc
     (texlive.combine {
       inherit (texlive) platex collection-langjapanese;
