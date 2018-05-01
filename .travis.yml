@@ -13,4 +13,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: wakate/rule
-    branch: ci
+    branch: master
