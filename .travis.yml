@@ -1,6 +1,10 @@
 language: nix
 script: nix-build
 sudo: true
+before_deploy:
+  - git config --local uesr.name "Masayuki Takeda"
+  - git config --local user.email "mtakeda.enigsol@gmail.com"
+  - git tag "$(date +'%F')-$(git log --format=%h -1)"
 deploy:
   provider: releases
   api_key:
