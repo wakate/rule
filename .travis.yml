@@ -6,6 +6,7 @@ deploy:
   api_key:
     secure: mmYh13LPFJ0021xDssQaGmFnzEhtR/9A0sIsQ7R+lbwgK5S2qNk6BMQpF/qFsl5kO7zztB8ee6WxlD8MdDBXkA/hXq63nagErYZ9TYfncu/6rQOZxqhh+reEIAB2qOfRLgyo7lBTc9xMkRjZ25CN94XM1zEjVcVWa3J29HjSGroPDMSfO2P82djC37+eY07M4w+Np6npYodOCF3AxxD8CNxf/AdgPvT4qudvyi9QtiwuvD18WCKdTm90E1YkEoEunkEwfgHwDMcdUpcPwf6xtIgYYqfJzS5xaRkC5Wu+qHfVDxM8ZumMnhUdlLDQD3Ezs6a9j3c3AN72cyHJpGloTUpMdjNODNGAK9tbd/BYtgMSqRzWXgNmgdqzmJNYsl4SoWmwPbyR23ZcuETfOfi1bFQxvsD3SeKZ50gIgZrmzPG9S0UhlllUnNRREAagN6/3q0OEyupXRjMLNo6VcR+MKvcnwe73aOZZ5NizRaJSP9YFVQdkbVFG72B4hq9N9r8of59tWkBv5Rkv/b0lhnJLE8SL/0dy9+x359OXPORdi5/y7SSaOjFroXgINhaAhmT3jLm4q6kQNBIE+c+SMGaENk94FQM7dhVJOyi90eHpLs8VQgy3sN617RsErWlUXft+dpWlISgvrlL9jr50gKeZOxKe7LUrI9g5u8PTaIzemtQ=
   file: result/rule.pdf
+  skip_cleanup: true
   on:
     repo: wakate/rule
     branch: ci
