@@ -1,6 +1,7 @@
 LATEX  = platex
 DVIPDF = dvipdfmx
 PANDOC = pandoc
+PANDOC_OPT = --from=markdown+east_asian_line_breaks
 RM = rm
 
 ROOT = rule
@@ -35,7 +36,7 @@ $(ROOT_AUX) : $(ROOT_TEX)
 .PHONY : tex
 tex : $(ROOT_TEX)
 $(ROOT_TEX) : $(ROOT_MD) $(TEMPLATE_TEX)
-	$(PANDOC) $(ROOT_MD) --template=$(TEMPLATE_TEX) -o $(ROOT_TEX)
+	$(PANDOC) $(PANDOC_OPT) $(ROOT_MD) --template=$(TEMPLATE_TEX) -o $(ROOT_TEX)
 
 .PHONY : clean
 clean:
