@@ -2,6 +2,7 @@ SHELL  = /bin/bash
 LATEX  = platex
 DVIPDF = dvipdfmx
 PANDOC = pandoc
+PANDOC_OPT = --from=markdown+east_asian_line_breaks
 RM = rm
 
 ROOT = rule
